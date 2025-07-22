@@ -46,7 +46,7 @@ export function Home() {
                             currency: 'brl'
                         })}
                     </strong>
-                    <button className="bg-white rounded-md px-2 py-1 hover:bg-slate-300 transition-colors" onClick={()=>handleAddCartItem(product)}>
+                    <button className="bg-white rounded-md px-2 py-1 hover:bg-slate-300 transition-colors " onClick={()=>handleAddCartItem(product)}>
                         <BsCartPlus size={20} color="#000000" />
                     </button>
                 </div>
