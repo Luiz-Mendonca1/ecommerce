@@ -6,6 +6,8 @@ interface CartContextData{
     cart: CartProps[]
     cartAmount: number
     addItemCart: (newItem: ProductProps)=> void
+    removeItemCart: (product: CartProps)=>void
+    total: string
 }
 
 interface CartProps{
@@ -26,7 +28,8 @@ export const CartContext = createContext({} as CartContextData)
 
 function CartProvinder({children}: CartProvinderProps){ {/*pega informações englobadas dos produtos existentes que estam sendo englobados e soma a quantidade com CartAmount*/}
     const[cart, setCart] = useState<CartProps[]>([])
-    
+    const [total, setTotal] = useState('')
+
     function addItemCart(newItem: ProductProps){
         const indexItem = cart.findIndex(item => item.id === newItem.id)
 
@@ -39,6 +42,7 @@ function CartProvinder({children}: CartProvinderProps){ {/*pega informações en
             cartList[indexItem].total=cartList[indexItem].amount *cartList[indexItem].price
 
             setCart(cartList)
+            totalResultCart(cartList)
             return
         }
 
@@ -50,13 +54,44 @@ function CartProvinder({children}: CartProvinderProps){ {/*pega informações en
         }
 
         setCart(products => [...products,data])
+        totalResultCart([...cart, data])
     }
+
+    function removeItemCart(product: CartProps){
+        const indexItem = cart.findIndex(item=>item.id===product.id)
+    
+
+        // se possuir pelo menos um produto apenas subtrai o amount, se tiver menos que 1 sera removido do carrinho
+        if(cart[indexItem]?.amount>1){
+            let cartList = cart
+            cartList[indexItem].amount=cartList[indexItem].amount-1
+            cartList[indexItem].total=cartList[indexItem].total-cartList[indexItem].price
+            
+            setCart(cartList)
+            totalResultCart(cartList)
+            return
+        }
+
+        const removeItem =cart.filter(item=>item.id!==product.id)
+        setCart(removeItem)
+        totalResultCart(removeItem)
+    }
+
+    function totalResultCart(items: CartProps[]){
+        let myCart = items
+        let result = myCart.reduce((acum, obj)=>{return acum + obj.total}, 0)
+        const resultFormated = result.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})
+        setTotal(resultFormated)
+    }
+
     return(
         <CartContext.Provider 
             value=
             {{cart, 
             cartAmount: cart.length,
-            addItemCart
+            addItemCart,
+            removeItemCart,
+            total
             }}>
             
                 {children}

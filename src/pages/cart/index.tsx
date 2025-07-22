@@ -3,12 +3,13 @@ import { Link } from "react-router";
 import { CartContext } from "../../context/CartContext";
 
 export function Cart() {
-  const {cart} = useContext(CartContext)
+  const {cart, total, addItemCart, removeItemCart} = useContext(CartContext)
   return (
     <div className=" h-fit">  
       <div className="w-full max-w-7xl mx-auto  pb-4">  
         <h1 className="font-medium text-2xl text-center py-4 text-white">My cart</h1>
         
+        {/* caso nao tenha nenhum produto adicionado alterar a pagina para redireciona-lo a home page */}
         {cart.length === 0 &&(
           <div className="flex flex-col items-center justify-center m-[20%] min-h-[200px] p-6 text-center">
             <div className="mb-4">
@@ -48,21 +49,24 @@ export function Cart() {
           />
           <strong className="text-white">Price: {item.price}</strong>
           <div className="flex items-center justify-center gap-3">
-            <button className="bg-white px-2 cursor-pointer rounded text-black font-medium flex items-center justify-center">
+            <button onClick={()=>removeItemCart(item)} className="bg-white px-2 cursor-pointer rounded text-black font-medium flex items-center justify-center">
               -
             </button>
             <strong className="text-white">{item.amount}</strong>
-            <button className="bg-white px-2 cursor-pointer rounded text-black font-medium flex items-center justify-center">
+            <button onClick={()=>addItemCart(item)} className="bg-white px-2 cursor-pointer rounded text-black font-medium flex items-center justify-center">
               +
             </button>
           </div>
           <strong className="text-white float-right">
-            Subtotal: {item.total}
+            Subtotal: {item.total.toLocaleString('pt-br',{
+              style: 'currency',
+              currency: 'BRL'
+            })}
           </strong>
         </section>
         ))}
         
-        {cart.length !== 0 && <strong className="text-white block mt-4">Total: </strong>}
+        {cart.length !== 0 && <strong className="text-white block mt-4">Total: {total}</strong>}
         
       </div>
     </div>
