@@ -1,8 +1,9 @@
 import { BsCartPlus } from "react-icons/bs";
 import { api } from "../../services/api";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 
-interface ProductProps{
+export interface ProductProps{
     id:number,
     title:string,
     description: string,
@@ -11,6 +12,7 @@ interface ProductProps{
 }
 
 export function Home() {
+    const {addItemCart} = useContext(CartContext)
     const [product, setProduct] = useState<ProductProps[]>([])
 
     useEffect(()=>{
@@ -21,6 +23,12 @@ export function Home() {
 
         getProduct()
     },[])
+
+    // adicionar item ao carrinho, importando todas suas informações
+    function handleAddCartItem(product: ProductProps){
+        addItemCart(product)
+        
+    }
   return (
     <div className="min-h-screen ">
          <h1 className="font-medium text-2xl text-center py-4 text-white">Trending products</h1>
@@ -38,7 +46,7 @@ export function Home() {
                             currency: 'brl'
                         })}
                     </strong>
-                    <button className="bg-white text-white rounded-md px-2 py-1 hover:bg-slate-300 transition-colors">
+                    <button className="bg-white rounded-md px-2 py-1 hover:bg-slate-300 transition-colors" onClick={()=>handleAddCartItem(product)}>
                         <BsCartPlus size={20} color="#000000" />
                     </button>
                 </div>
