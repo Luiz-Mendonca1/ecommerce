@@ -23,6 +23,7 @@ export function Home() {
     },[])
   return (
     <div className="min-h-screen ">
+         <h1 className="font-medium text-2xl text-center py-4 text-white">Trending products</h1>
         <main className="w-full max-w-7xl px-4 mx-auto ">
         <div className="grid grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-5">
             {product.map((product)=>(
