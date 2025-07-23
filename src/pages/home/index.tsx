@@ -3,6 +3,7 @@ import { api } from "../../services/api";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router";
 
 export interface ProductProps{
     id:number,
@@ -13,6 +14,7 @@ export interface ProductProps{
 }
 
 export function Home() {
+    const navigate = useNavigate();
     const {addItemCart} = useContext(CartContext)
     const [product, setProduct] = useState<ProductProps[]>([])
 
@@ -38,8 +40,8 @@ export function Home() {
         <main className="w-full max-w-7xl px-4 mx-auto ">
         <div className="grid grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-5">
             {product.map((product)=>(
-                <section key={product.id} className="w-full">
-                <img src={product.cover} 
+                <section onClick={()=>navigate(`/product/${product.id}`)} key={product.id} className="w-full">
+                <img className="rounded" src={product.cover} 
                 alt={product.title} />
                 <p className="font-medium mt-1 mb-2 text-zinc-100">{product.title}</p>
                 <div className="flex items-center gap-3">

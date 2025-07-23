@@ -3,44 +3,107 @@
     { 
       "id": 1, 
       "title": "Airpods Apple, com Estojo de Recarga, Bluetooth", 
-      "description": "Airpods Apple, com Estojo de Recarga, Bluetooth, Branco\nO Novo AirPods traz uma experiência nova em usar fones de ouvido sem fio. É só tirá-los do estojo e estão prontos para uso com seu iPhone, Apple Watch, iPad ou Mac. Ele oferece cinco horas de som e três horas para conversar com apenas uma carga. Eles acompanham seu ritmo graças ao estojo que proporciona várias cargas adicionais para mais de 24 horas de uso." ,
-      "price":120,
+      "description": "Airpods Apple, com Estojo de Recarga, Bluetooth, Branco\nO Novo AirPods traz uma experiência nova em usar fones de ouvido sem fio. É só tirá-los do estojo e estão prontos para uso com seu iPhone, Apple Watch, iPad ou Mac. Ele oferece cinco horas de som e três horas para conversar com apenas uma carga. Eles acompanham seu ritmo graças ao estojo que proporciona várias cargas adicionais para mais de 24 horas de uso.",
+      "price": 120,
       "cover": "https://i.imgur.com/uXrbyfA.jpg"
     },
     { 
       "id": 2, 
       "title": "Notebook Gamer Lenovo Gaming 3i Intel Core i5-11300H", 
-      "description": "Lenovo ideapad Gaming 3i\nNovo design com 11ª Geração de Processadores Intel Core i5-11300H e placa de vídeo NVIDIA GeForce GTX 1650 4GB. Ideal para gamers e usuários que também precisam de alta performance. Com tela de 15.6'' Full HD WVA Antirreflexo para melhor definição de imagem e cores. O armanezamento SSD PCIe NVMe é 10x mais rápido* que um HDD 2.5” SATA, você terá mais segurança ao armazenar seus dados. O teclado retroiluminado em LED branco, deixa o computador mais atraente e também favorece a performance para jogos em lugares com pouca iluminação.",
-      "price": 379.9,
+      "description": "Lenovo ideapad Gaming 3i\nNovo design com 11ª Geração de Processadores Intel Core i5-11300H e placa de vídeo NVIDIA GeForce GTX 1650 4GB. Ideal para gamers e usuários que também precisam de alta performance. Com tela de 15.6'' Full HD WVA Antirreflexo para melhor definição de imagem e cores.",
+      "price": 3799.90,
       "cover": "https://i.imgur.com/bM5IUKe.jpg"
     },
     { 
       "id": 3, 
       "title": "Teclado Mecânico Gamer HyperX Alloy", 
-      "description": "Teclado HyperX Alloy MKW100, HKBM1-R-EUA/G - 4P5E1AA#ABA\nObtenha uma iluminação radiante e por tecla com efeitos dinâmicos para adicionar um toque de estilo ao seu setup de PC. Estrutura em alumínio durável\nCom uma estrutura de alumínio sólida, o Alloy MKW100 foi projetado para fornecer estabilidade quando os toques em teclas estiverem a todo vapor. O descanso para pulso removível ajuda a reduzir a fadiga de longas sessões de jogos ou de trabalho.",
+      "description": "Teclado HyperX Alloy MKW100 com iluminação radiante e por tecla com efeitos dinâmicos. Estrutura em alumínio durável e descanso para pulso removível para reduzir a fadiga em longas sessões.",
       "price": 199.99,
       "cover": "https://i.imgur.com/ldh1Q8O.jpg"
     },
     { 
       "id": 4, 
       "title": "Monitor Gamer Husky Tempest 34", 
-      "description": "O Monitor Gamer Husky Gaming Tempest LED 34 UltraWide Curvo traz a experiência de imersão completa para o seus jogos! A tela Curva UltraWide, formato 21:9, e Quad HD (QHD), com taxa de atualização de 144Hz, confere maior campo de visão e amplifica a experiência de imersão durante seus jogos.",
+      "description": "Monitor Gamer Husky Gaming Tempest LED 34 UltraWide Curvo com tela 21:9, Quad HD (QHD) e taxa de atualização de 144Hz para maior campo de visão e experiência imersiva.",
       "price": 2099.99,
       "cover": "https://i.imgur.com/sRmbcWW.jpeg"
     },
     { 
       "id": 5, 
       "title": "Soundbar LG SNH5, 4.1 Canais, Bluetooth, 600W RMS", 
-      "description": "O LG Sound Bar SNH5 uniu-se ao DTS Virtual:X para transformar sua casa em um verdadeiro cinema e deixar a exibição dos seus filmes favoritos muito mais imersiva. O LG Sound Bar SNH5 suporta saída para 4.1 canais para que você possa assistir à TV com um som mais envolvente.",
+      "description": "Sound Bar LG SNH5 com DTS Virtual:X para som cinematográfico. Suporta saída para 4.1 canais para som envolvente em filmes e música.",
       "price": 1099.99,
       "cover": "https://i.imgur.com/w7SeQsa.jpg"
     },
     { 
       "id": 6, 
       "title": "Smartwatch Samsung Galaxy Watch 5, BT, 40mm", 
-      "description": "O smartwatch que oferece o mais completo conjunto de funções de monitoramento para o acompanhamento da Saúde e do Bem-Estar de uma maneira precisa e confiável. Possui os recursos essenciais e mais avançados para medir e acompanhar o estado da sua Saúde, funções como monitor de Batimento Cardíaco, Pressão Arterial, Eletrocardiograma, Oxímetro, Detecção de Queda e Chamada de Emergência, programa de Coaching do Sono para monitorar e melhorar a qualidade do seu Sono , além da Bioimpedância para avaliar a composição corporal de maneira rápida e interativa, e verificar a evolução os resultados dos exercícios refletidos no seu corpo. Possui uma série de funções avançadas de treinos com mais de 95 modalidades. ",
+      "description": "Smartwatch com monitoramento avançado de saúde: batimento cardíaco, pressão arterial, eletrocardiograma, oxímetro e bioimpedância. Mais de 95 modalidades de treino.",
       "price": 1139.00,
       "cover": "https://i.imgur.com/Ua4bURp.jpg"
+    },
+    { 
+      "id": 7, 
+      "title": "PlayStation 5 Digital Edition", 
+      "description": "Console PlayStation 5 Edição Digital com SSD ultrarrápido, tecnologia de ponta e exclusivos incríveis. Experimente carregamentos extremamente rápidos com SSD de altíssima velocidade.",
+      "price": 3899.90,
+      "cover": "https://webfones.vtexassets.com/arquivos/ids/245413/console-ps5-pro-2tb-ssd-120hz-sony-1.jpg.jpg?v=638749818662470000"
+    },
+    { 
+      "id": 8, 
+      "title": "Mouse Gamer Logitech G502 Hero", 
+      "description": "Mouse Gamer Logitech G502 HERO com sensor óptico de 16.000 DPI, ajuste de peso personalizável e 11 botões programáveis. Design ergonômico para conforto prolongado.",
+      "price": 249.90,
+      "cover": "https://m.media-amazon.com/images/I/718b9wK3eaL.jpg"
+    },
+    { 
+      "id": 9, 
+      "title": "Webcam Logitech C920 HD Pro", 
+      "description": "Webcam Full HD 1080p/30fps com autofoco, microfones estéreo integrados e compatibilidade com Skype, Zoom e outras plataformas. Ideal para home office e streaming.",
+      "price": 399.90,
+      "cover": "https://m.media-amazon.com/images/I/71iNwni9TsL.jpg"
+    },
+    { 
+      "id": 10, 
+      "title": "Tablet Samsung Galaxy Tab S8 11", 
+      "description": "Tablet Android de alto desempenho com tela WQXGA de 11 polegadas, processador Snapdragon 8 Gen 1, 8GB RAM e caneta S-Pen inclusa. Perfeito para produtividade e entretenimento.",
+      "price": 4299.00,
+      "cover": "https://br.octoshop.com/cdn/shop/files/tablet_samsung_tab_s8.jpg?v=1739307703"
+    },
+    { 
+      "id": 11, 
+      "title": "Fone Bluetooth Sony WH-1000XM4", 
+      "description": "Fones de ouvido sem fio premium com cancelamento de ruído líder do setor, 30 horas de bateria e som de alta resolução. Controle por toque e assistente de voz integrado.",
+      "price": 1799.00,
+      "cover": "https://m.media-amazon.com/images/I/51aXvjzcukL._UF1000,1000_QL80_.jpg"
+    },
+    { 
+      "id": 12, 
+      "title": "HD Externo Seagate Expansion 2TB", 
+      "description": "HD Externo portátil USB 3.0 com 2TB de armazenamento, compatível com PC e Mac. Design compacto e sem necessidade de alimentação externa.",
+      "price": 399.90,
+      "cover": "https://m.media-amazon.com/images/I/51ctZMlK-LL.jpg"
+    },
+    { 
+      "id": 13, 
+      "title": "Cadeira Gamer DXRacer Formula", 
+      "description": "Cadeira gamer ergonômica com apoio lombar, reclinável a 135°, braços 3D ajustáveis e estrutura de aço reforçado. Estofamento em couro sintético de alta qualidade.",
+      "price": 2199.90,
+      "cover": "https://img.kalunga.com.br/fotosdeprodutos/315747z_3.jpg"
+    },
+    { 
+      "id": 14, 
+      "title": "Roteador TP-Link Archer AX50 WiFi 6", 
+      "description": "Roteador dual-band WiFi 6 (802.11ax) com velocidades até 3Gbps, 4 antenas de alto ganho e processador Intel de alto desempenho. Ideal para jogos e streaming em 4K.",
+      "price": 899.90,
+      "cover": "https://www.networkhardwares.com/cdn/shop/products/1061181471_1be742cd-72fa-4b30-8aae-dbaab7a95447.jpg?v=1708762494&width=416"
+    },
+    { 
+      "id": 15, 
+      "title": "Impressora Multifuncional Epson EcoTank L3210", 
+      "description": "Impressora jato de tinta com sistema de tanque de tinta, economize até 90% em custos de impressão. Imprime, copia e digitaliza com alta qualidade.",
+      "price": 1299.00,
+      "cover": "https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/360/31796-00016_01.jpg"
     }
   ]
 }
