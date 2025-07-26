@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router";
+import { Link } from "react-router";
 
 export interface ProductProps{
     id:number,
@@ -40,10 +41,12 @@ export function Home() {
         <main className="w-full max-w-7xl px-4 mx-auto ">
         <div className="grid grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-5">
             {product.map((product)=>(
-                <section onClick={()=>navigate(`/product/${product.id}`)} key={product.id} className="w-full">
-                <img className="rounded" src={product.cover} 
+                <section key={product.id} className="w-full">
+                <Link to={`/products/${product.id}`}>
+                <img  className="rounded" src={product.cover} 
                 alt={product.title} />
                 <p className="font-medium mt-1 mb-2 text-zinc-100">{product.title}</p>
+                </Link>
                 <div className="flex items-center gap-3">
                     <strong className="text-zinc-100 text-lg">
                         {product.price.toLocaleString('pt-br', {

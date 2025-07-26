@@ -41,11 +41,11 @@ export function Cart() {
         )}
 
         {cart.map( (item) => (
-          <section className="flex items-center justify-between border-b-2 border-slate-800">
+          <section className="rounded flex items-center justify-between border-b-2 border-slate-800">
           <img 
             src={item.cover} 
             alt={item.title} 
-            className="w-28"
+            className="rounded-l w-28"
           />
           <strong className="text-white">Price: {item.price}</strong>
           <div className="flex items-center justify-center gap-3">
